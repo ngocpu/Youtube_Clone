@@ -37,14 +37,45 @@ a {
 .react-player {
   height: 77vh !important;
   width: 100% !important;
+  object-fit: contain;
 }
 
 .search-bar{
   border:none;
   outline:none;
-  width:350px;
+  width:90%;
+  padding-left: 10px;
+  background-color: #121212;
+  line-height: 37px;
+  color: aliceblue;
+  border-radius: 80px;
 }
-
+.mobile_input{
+    position: absolute;
+    top: 20px;
+    left: 4%;
+    padding: 5px 3px 5px 8px;
+    border: none;
+    outline: none;
+    border-radius: 80px;
+    background-color: #121212;
+    color: aliceblue;
+}
+.login_btn{
+  padding: 0;
+  margin-right: 15px;
+  width: 100%;
+  height: 35px;
+  border: none;
+  color: #368bd5;
+  font-size: 0.885rem;
+  font-weight: 600;
+  background-color: #0f0f0f;
+  border-radius: 20px;
+}
+.login_btn:hover{
+  cursor: pointer;
+}
 .category-btn{
   font-weight: bold !important;
   text-transform: capitalize;
@@ -83,6 +114,6 @@ a {
     height: 45vh !important;
   }
   .search-bar{
-    width:200px;
+    /* padding: 0; */
   }
 }

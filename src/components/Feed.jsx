@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import { Sidebar, Videos } from "./index";
 import {fetchFromAPI} from '../utils/fetchFromAPI'
  const Feed = () => {
@@ -28,7 +28,6 @@ import {fetchFromAPI} from '../utils/fetchFromAPI'
         <Typography variant="h4" fontWeight="bold" mb={2} sx={{ color: "white" }}>
           {selectedCategory} <span style={{ color: "#FC1503" }}>videos</span>
         </Typography>
-
         <Videos videos={videos} />
       </Box>
     </Stack>
